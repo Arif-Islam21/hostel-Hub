@@ -3,13 +3,16 @@ import logo from "/wer.svg";
 
 const ThemeLogo = () => {
   return (
-    <Link to={"/"} className="btn h-20 btn-ghost text-xl">
+    <Link
+      to={"/"}
+      className="btn bg-gradient-to-r from-themeColor to-themeSecendary font-bold text-xl"
+    >
       <img
-        className="h-16 w-16 rounded-xl bg-transparent"
+        className="size-10 rounded-xl bg-transparent"
         src={logo}
         alt="hostel hub logo"
       />
-      <span className="text-2xl text-themeColor">Hostel Hub</span>
+      <span className="text-2xl text-white">Hostel Hub</span>
     </Link>
   );
 };
