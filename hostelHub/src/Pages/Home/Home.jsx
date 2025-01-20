@@ -1,3 +1,4 @@
+import Priceing from "../../Components/Priceing";
 import Banner from "./Banner/Banner";
 import Membership from "./Membership/Membership";
 import Menu from "./Menu/Menu";
@@ -14,6 +15,7 @@ const Home = () => {
       <Menu />
       <OurChefs />
       <Membership />
+      <Priceing />
     </div>
   );
 };
