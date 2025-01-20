@@ -10,15 +10,24 @@ const MealTab = () => {
   const breakFast = data?.filter((item) => item.category === "Breakfast");
   const Lunch = data?.filter((item) => item.category === "Lunch");
   const Dinner = data?.filter((item) => item.category === "Dinner");
+  const tabData = ["All Measl", "BreakFast", "Lunch", "Dinner"];
   // console.log(breakFast);
   return (
     <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-      <div className="">
-        <TabList>
-          <Tab>All Measl</Tab>
-          <Tab>BreakFast</Tab>
-          <Tab>Lunch</Tab>
-          <Tab>Dinner</Tab>
+      <div className="max-w-[50vw] mx-auto">
+        <TabList className={`flex justify-around mt-6`}>
+          {tabData.map((item, index) => (
+            <Tab
+              key={index}
+              className={`w-full cursor-pointer text-center ${
+                tabIndex === index
+                  ? " bg-gradient-to-r from-themeColor to-themeSecendary font-bold text-white"
+                  : "bg-white text-black"
+              } px-4 py-2 rounded`}
+            >
+              {item}
+            </Tab>
+          ))}
         </TabList>
       </div>
       {/* FOR ALL MEALS */}
