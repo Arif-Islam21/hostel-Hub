@@ -1,21 +1,23 @@
 const PriceingCard = ({ item }) => {
   const { name, price, details, features, isActive } = item;
   return (
-    <div class="px-6 relative py-4 transition-colors shadow-lg shadow-gray-600 duration-300 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
-      <p class="text-lg font-medium text-gray-800 dark:text-gray-100">{name}</p>
-      <h4 class="mt-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
+    <div className="px-6 relative py-4 transition-colors shadow-lg shadow-gray-600 duration-300 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+      <p className="text-lg font-medium text-gray-800 dark:text-gray-100">
+        {name}
+      </p>
+      <h4 className="mt-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
         ${price}{" "}
-        <span class="text-base font-normal text-gray-600 dark:text-gray-400">
+        <span className="text-base font-normal text-gray-600 dark:text-gray-400">
           / Month
         </span>
       </h4>
-      <p class="mt-4 text-gray-500 dark:text-gray-300">{details}</p>
-      <div class="mt-8 space-y-8">
+      <p className="mt-4 text-gray-500 dark:text-gray-300">{details}</p>
+      <div className="mt-8 space-y-8">
         {features?.map((feature, index) => (
-          <div class="flex items-center">
+          <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              className="w-5 h-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -26,13 +28,15 @@ const PriceingCard = ({ item }) => {
               />
             </svg>
 
-            <span class="mx-4 text-gray-700 dark:text-gray-300">{feature}</span>
+            <span className="mx-4 text-gray-700 dark:text-gray-300">
+              {feature}
+            </span>
           </div>
         ))}
       </div>
 
-      <div className="absolute bottom-2 w-[95%] left-2 right-2">
-        <button class="w-full  px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+      <div classNameName="absolute bottom-2 w-[95%] left-2 right-2">
+        <button className="w-full  px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
           Choose plan
         </button>
       </div>
