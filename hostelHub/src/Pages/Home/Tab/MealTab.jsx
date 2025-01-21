@@ -15,11 +15,11 @@ const MealTab = () => {
   return (
     <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
       <div className="max-w-[50vw] mx-auto">
-        <TabList className={`flex justify-around mt-6`}>
+        <TabList className={`flex justify-around my-6 gap-4`}>
           {tabData.map((item, index) => (
             <Tab
               key={index}
-              className={`w-full cursor-pointer text-center ${
+              className={`w-full cursor-pointer shadow-2xl text-center ${
                 tabIndex === index
                   ? " bg-gradient-to-r from-themeColor to-themeSecendary font-bold text-white"
                   : "bg-white text-black"
