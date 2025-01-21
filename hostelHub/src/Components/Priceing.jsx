@@ -67,7 +67,7 @@ const Priceing = () => {
             <PriceingCard key={index} item={item} />
           ))}
 
-          <div className="px-6 py-4 transition-colors duration-300 transform bg-gray-700 rounded-lg dark:bg-gray-800">
+          <div className="px-6 py-4 transition-colors duration-300 transform  rounded-lg dark:bg-gray-800">
             <p className="text-lg font-medium text-gray-100">Popular</p>
 
             <h4 className="mt-2 text-3xl font-semibold text-gray-100">

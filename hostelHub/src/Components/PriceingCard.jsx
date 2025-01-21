@@ -1,7 +1,11 @@
 const PriceingCard = ({ item }) => {
   const { name, price, details, features, isActive } = item;
   return (
-    <div className="px-6 relative py-4 transition-colors shadow-lg shadow-gray-600 duration-300 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+    <div
+      className={`px-6 relative py-4 transition-colors ${
+        isActive && "bg-gray-700"
+      } shadow-lg shadow-gray-600 duration-300 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800`}
+    >
       <p className="text-lg font-medium text-gray-800 dark:text-gray-100">
         {name}
       </p>
@@ -35,7 +39,7 @@ const PriceingCard = ({ item }) => {
         ))}
       </div>
 
-      <div classNameName="absolute bottom-2 w-[95%] left-2 right-2">
+      <div classNameName="absolute bottom-2 w-[95%] left-2  right-2">
         <button className="w-full  px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
           Choose plan
         </button>
