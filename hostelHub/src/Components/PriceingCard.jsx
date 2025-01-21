@@ -1,21 +1,21 @@
+import { Link } from "react-router-dom";
+
 const PriceingCard = ({ item }) => {
   const { name, price, details, features, isActive } = item;
   return (
     <div
-      className={`px-6 relative py-4 transition-colors ${
-        isActive && "bg-gray-700"
+      className={`px-6 relative group py-4 transition-colors ${
+        isActive && "bg-gray-700 text-gray-100 hover:text-gray-800"
       } shadow-lg shadow-gray-600 duration-300 transform rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800`}
     >
-      <p className="text-lg font-medium text-gray-800 dark:text-gray-100">
-        {name}
-      </p>
-      <h4 className="mt-2 text-3xl font-semibold text-gray-800 dark:text-gray-100">
+      <p className="text-lg font-medium  dark:text-gray-100">{name}</p>
+      <h4 className="mt-2 text-3xl font-semibold dark:text-gray-100">
         ${price}{" "}
-        <span className="text-base font-normal text-gray-600 dark:text-gray-400">
+        <span className="text-base font-normal  dark:text-gray-400">
           / Month
         </span>
       </h4>
-      <p className="mt-4 text-gray-500 dark:text-gray-300">{details}</p>
+      <p className="mt-4 dark:text-gray-300">{details}</p>
       <div className="mt-8 space-y-8">
         {features?.map((feature, index) => (
           <div className="flex items-center">
@@ -32,17 +32,25 @@ const PriceingCard = ({ item }) => {
               />
             </svg>
 
-            <span className="mx-4 text-gray-700 dark:text-gray-300">
+            <span
+              className={`mx-4 ${
+                isActive
+                  ? "text-gray-200 group-hover:text-gray-800"
+                  : "text-gray-700"
+              } dark:text-gray-300`}
+            >
               {feature}
             </span>
           </div>
         ))}
       </div>
 
-      <div classNameName="absolute bottom-2 w-[95%] left-2  right-2">
-        <button className="w-full  px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-          Choose plan
-        </button>
+      <div className="absolute  bottom-4 w-[95%] left-2  right-2">
+        <Link to={`/checkout/${name}/${price}`}>
+          <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+            {isActive ? "Best Value" : "Get Started"}
+          </button>
+        </Link>
       </div>
     </div>
   );
