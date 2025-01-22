@@ -1,4 +1,5 @@
 import Priceing from "../../Components/Priceing";
+import Accordian from "./Accordian/Accordian";
 import Banner from "./Banner/Banner";
 import Membership from "./Membership/Membership";
 import Menu from "./Menu/Menu";
@@ -16,6 +17,7 @@ const Home = () => {
       <OurChefs />
       {/* <Membership /> */}
       <Priceing />
+      <Accordian />
     </div>
   );
 };
