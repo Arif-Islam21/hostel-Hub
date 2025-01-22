@@ -3,7 +3,7 @@ import Rating from "react-rating";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 const TabCard = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
