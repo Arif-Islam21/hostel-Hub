@@ -11,7 +11,7 @@ const RecheckCard = () => {
         </p>
       </div>
       <div className="flex justify-center items-center">
-        <button className="btn max-w-56 min-w-40 bg-secondColor text-white font-bold my-4 hover:text-secondColor hover:border-secondColor">
+        <button className="btn max-w-56 min-w-40 bg-themeColor/80 text-white font-bold my-4 hover:text-white hover:border-themeColor">
           <TbFileSymlink size={20} />
           Visit
         </button>

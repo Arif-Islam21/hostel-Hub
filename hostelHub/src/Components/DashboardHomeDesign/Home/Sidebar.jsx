@@ -10,7 +10,7 @@ const Sidebar = () => {
       </figure>
       <div className="card-body">
         <h2 className="text-[#5A5FBC] text-center text-3xl font-bold">
-          Your Results!
+          Your Impact!
         </h2>
         <p className="text-center">
           All your insights and your details in one place.

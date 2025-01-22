@@ -8,19 +8,19 @@ const TopScoreCard = () => {
           className="size-16 rounded-xl"
         />
         <div>
-          <h2 className="text-secondColor font-semibold">Top Score</h2>
-          <h3 className="text-gray-600">
+          <h2 className="text-secondColor font-semibold">Top Contributor</h2>
+          {/* <h3 className="text-gray-600">
             <span className="text-xl font-semibold text-black">230</span>/240
-          </h3>
+          </h3> */}
         </div>
       </div>
       <div className="flex items-center justify-between mt-1">
         <h2 className="text-lg font-semibold text-gray-600">
           By <span className="text-black">Ariful Islam</span>
         </h2>
-        <h2 className="bg-secondColor px-2 rounded-lg text-center font-bold text-white">
+        {/* <h2 className="bg-secondColor px-2 rounded-lg text-center font-bold text-white">
           92% Accuracy
-        </h2>
+        </h2> */}
       </div>
     </div>
   );
