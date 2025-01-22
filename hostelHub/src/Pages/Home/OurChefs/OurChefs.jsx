@@ -8,7 +8,7 @@ const OurChefs = () => {
         subHeading={"TASTY tandard and  CRUNCHY"}
         heading={"Our Special Chefs"}
       />
-      <div className="sm:max-w-fit md:min-w-full">
+      <div className="max-w-full">
         <ChefBanner />
       </div>
     </div>

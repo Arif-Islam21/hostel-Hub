@@ -15,9 +15,9 @@ const MealTab = () => {
   // console.log(breakFast);
   return (
     <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-      <div className="max-w-[50vw] mx-auto">
+      <div className="lg:max-w-[50vw] mx-4  lg:mx-auto">
         <TabList
-          className={`flex md:justify-around flex-col md:flex-row my-6 justify-start gap-4`}
+          className={`flex md:justify-around flex-col  md:flex-row my-6 justify-start gap-4`}
         >
           {tabData.map((item, index) => (
             <Tab

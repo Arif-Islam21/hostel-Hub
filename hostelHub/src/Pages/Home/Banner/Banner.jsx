@@ -42,22 +42,22 @@ const Banner = () => {
         modules={[Pagination, Parallax, Autoplay, EffectFade, Navigation]}
       >
         <SwiperSlide className="min-h-[70vh] relative">
-          <img className="h-[75vh] w-full" src={meal1} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal1} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal2} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal2} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal3} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal3} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal4} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal4} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal5} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal5} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal6} alt="" />
+          <img loading="lazy" className="h-[75vh] w-full" src={meal6} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

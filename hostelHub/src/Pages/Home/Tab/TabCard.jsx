@@ -24,7 +24,7 @@ const TabCard = ({ item }) => {
           />
           <p className="font-semibold">Price: ${item?.priceInt}</p>
         </div>
-        <div className=" mt-2  border-2">
+        <div className=" mt-2">
           <Link className="" to={`/mealDetails/${item._id}`}>
             <button className="btn btn-outline w-full bg-gradient-to-r from-themeColor to-themeSecendary hover:bg-themeColor/70 text-white border-none">
               Detail
