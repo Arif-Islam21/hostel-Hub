@@ -13,22 +13,17 @@ const Response = () => {
       <div className="bg-secondColor max-w-[10vw] py-[2px] text-white font-semibold maxw px-2 rounded-lg mt-2">
         Std Time - 2min
       </div>
-      <div className="py-1 border-dashed border-2 border-gray-300 my-4 flex justify-between items-end rounded-md px-1 bg-gray-100">
+      <div className="py-1 border-dashed border-2 border-gray-300 my-4 flex justify-between items-center rounded-md px-1 bg-gray-100">
         <h2>
           <span className="text-secondColor text-3xl">60</span>
-          <span className="text-gray-600">% Ans. Took</span>
+          <span className="text-gray-600">% Items. Took</span>
         </h2>
-        <div className="flex justify-between items-center">
-          <h2 className="text-2xl text-red-600">
-            <FaArrowUp />
-          </h2>{" "}
-          <h2 className="text-gray-600 font-bold">2 Min</h2>
-        </div>
+        <h2 className="text-2xl text-red-600">
+          <FaArrowUp />
+        </h2>
       </div>
       <div className="border-t-2 border-gray-400 mt-3s">
-        <h2 className="text-center text-2xl my-2 font-semibold">
-          You Are <span className="text-red-600">Slow</span> !
-        </h2>
+        <h2 className="text-center text-2xl my-2 font-semibold">Your Orders</h2>
       </div>
     </div>
   );

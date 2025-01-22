@@ -36,12 +36,12 @@ const Suggestion = () => {
       <div className="grid grid-cols-3 gap-3 mt-4">
         {data.map((item, idx) => (
           <div key={idx} className="flex flex-col justify-around ">
-            <h2 className="bg-secondColor px-1 rounded-md text-white font-bold">
+            <h2 className="bg-secondColor rounded-md text-white font-bold">
               {item.topText}
             </h2>
             <div className="text-black p-2 border-dashed rounded-lg border-gray-500 bg-gray-100 border-2 my-4 py-4">
               <span className="text-2xl font-semibold">{item.time}</span>
-              <span className="font-bold text-gray-600">{item.format}</span>
+              {/* <span className="font-bold text-gray-600">{item.format}</span> */}
             </div>
             <h2
               style={{ color: item.text }}

@@ -3,41 +3,41 @@ import { AiOutlineStock } from "react-icons/ai";
 const ImprovementCard = () => {
   const subjects = [
     {
-      name: "Geography",
+      name: "chikken",
       color: "#1CB9B4",
     },
     {
-      name: "Politics",
+      name: "Pizza",
       color: "#EAB308",
     },
     {
-      name: "Current Affairs",
+      name: "Berger",
       color: "#1CB9B4",
     },
     {
-      name: "General Studies",
+      name: "Pasta",
       color: "#B91C1C",
     },
     {
-      name: "Mathmatics",
+      name: "Sause",
       color: "#1CB9B4",
     },
     {
-      name: "Social Studies",
+      name: "Sobji",
       color: "#C6CAD0",
     },
-    {
-      name: "English Studies",
-      color: "#B91C1C",
-    },
-    {
-      name: "Indian History",
-      color: "#EAB308",
-    },
-    {
-      name: "Economics",
-      color: "#1CB9B4",
-    },
+    // {
+    //   name: "English Studies",
+    //   color: "#B91C1C",
+    // },
+    // {
+    //   name: "Indian History",
+    //   color: "#EAB308",
+    // },
+    // {
+    //   name: "Economics",
+    //   color: "#1CB9B4",
+    // },
   ];
   return (
     <div className="bg-white border-2 border-gray-300 rounded-lg min-h-[30vh] p-4">
@@ -48,7 +48,7 @@ const ImprovementCard = () => {
         <h4 className="text-xl font-semibold">Improvements</h4>
       </div>
       <h2 className="text-xl text-black font-semibold mt-2">
-        Subject Understanding
+        Most Demanded Items
       </h2>
       <div className="flex gap-[2px] flex-wrap my-3">
         {subjects.map((item, idx) => (
