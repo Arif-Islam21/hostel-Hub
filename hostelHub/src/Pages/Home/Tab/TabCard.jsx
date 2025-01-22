@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import Rating from "react-rating";
+import { CiStar } from "react-icons/ci";
+import { FaStar } from "react-icons/fa";
 const TabCard = ({ item }) => {
+  console.log(item);
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
@@ -13,12 +16,17 @@ const TabCard = ({ item }) => {
       <div className="card-body">
         <h2 className="card-title justify-center">{item?.title}</h2>
         <div className="flex justify-between items-center text-center">
-          <p>Rating: {item?.ratingInt}</p>
-          <p>Price: {item?.priceInt}</p>
+          <Rating
+            readonly
+            initialRating={item?.ratingInt}
+            emptySymbol={<CiStar size={24} color="#ffbf00" />}
+            fullSymbol={<FaStar size={24} color="#ffbf00" />}
+          />
+          <p className="font-semibold">Price: ${item?.priceInt}</p>
         </div>
-        <div className="card-actions mt-2 justify-center">
-          <Link to={`/mealDetails/${item._id}`}>
-            <button className="btn btn-outline bg-themeColor text-white border-none">
+        <div className=" mt-2  border-2">
+          <Link className="" to={`/mealDetails/${item._id}`}>
+            <button className="btn btn-outline w-full bg-gradient-to-r from-themeColor to-themeSecendary hover:bg-themeColor/70 text-white border-none">
               Detail
             </button>
           </Link>

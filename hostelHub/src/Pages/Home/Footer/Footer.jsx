@@ -8,7 +8,7 @@ import {
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-base-300 text-base-content p-2 lg:p-10">
+      <footer className="footer bg-gradient-to-r from-themeColor/50 via-themeColor/50 to-themeSecendary text-base-content p-2 lg:p-10">
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
@@ -58,7 +58,7 @@ const Footer = () => {
           </fieldset>
         </form>
       </footer>
-      <footer className="footer footer-center bg-base-300 text-base-content p-4">
+      <footer className="footer footer-center bg-gradient-to-r from-themeColor/50 via-themeColor/50 to-themeSecendary text-base-content p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
