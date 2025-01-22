@@ -20,6 +20,7 @@ import AllReviews from "../Pages/DashBoard/AdminDashBoard/AllReviews/AllReviews"
 import ServeMeal from "../Pages/DashBoard/AdminDashBoard/ServeMeal/ServeMeal";
 import UpcomingMeal from "../Pages/DashBoard/AdminDashBoard/UpcomingMeal/UpcomingMeal";
 import UpcomingMeals from "../Pages/UpcomingMeals/UpcomingMeals";
+import DashboardHome from "../Pages/DashBoard/DashboardHome/DashboardHome";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,14 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <DashBoard />,
     children: [
+      {
+        index: true,
+        element: (
+          <PrivateRoute>
+            <DashboardHome />
+          </PrivateRoute>
+        ),
+      },
       {
         path: "addMeal",
         element: (
