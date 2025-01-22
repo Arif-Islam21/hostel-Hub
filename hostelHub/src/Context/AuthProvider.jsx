@@ -56,11 +56,11 @@ const AuthProvider = ({ children }) => {
   // };
 
   useEffect(() => {
-    const unSubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        setUser(user);
+    const unSubscribe = onAuthStateChanged(auth, async (currentUser) => {
+      if (currentUser) {
+        setUser(currentUser);
         setLoading(false);
-        console.log(user);
+        // console.log(user);
       } else {
         setLoading(false);
         setUser(null);

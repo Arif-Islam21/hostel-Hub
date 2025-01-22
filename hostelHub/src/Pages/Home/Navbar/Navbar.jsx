@@ -4,6 +4,7 @@ import useAuth from "../../../Hooks/useAuth";
 import { Link, NavLink } from "react-router-dom";
 import "react-tooltip/dist/react-tooltip.css";
 import ThemeLogo from "../../../Components/ThemeLogo";
+import { FaRegUser } from "react-icons/fa";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -89,7 +90,6 @@ const Navbar = () => {
         <div className="navbar-end z-10 gap-4">
           {user ? (
             <>
-              {" "}
               <button className="btn btn-ghost btn-circle">
                 <div className="indicator">
                   <svg
@@ -116,7 +116,11 @@ const Navbar = () => {
                   className="btn btn-ghost btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img alt="This is user photo" src={user.photoURL} />
+                    {user?.photoURL ? (
+                      <img alt="This is user photo" src={user?.photoURL} />
+                    ) : (
+                      <FaRegUser size={28} />
+                    )}
                   </div>
                 </div>
                 <ul
