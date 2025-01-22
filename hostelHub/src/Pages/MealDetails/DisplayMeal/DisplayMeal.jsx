@@ -11,6 +11,7 @@ import Review from "../../../Components/Review";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import useUserBadge from "../../../Hooks/useUserBadge";
+import image from "/bannerImage/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg";
 
 const DisplayMeal = () => {
   const { user, loading } = useAuth();
@@ -29,6 +30,8 @@ const DisplayMeal = () => {
       return data;
     },
   });
+
+  console.log(mealData);
   const open = () => {
     setIsOpen(true);
   };
@@ -95,8 +98,17 @@ const DisplayMeal = () => {
   };
 
   return (
-    <div>
-      <div className="hero bg-base-200 min-h-[70vh]">
+    <div
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+      className="bg-base-200 min-h-full h-[100vh] flex justify-center items-center lg:px-24"
+    >
+      <div className="hero bg-gray-400   min-h-[70vh] border-2 rounded-lg border-gray-200 shadow-lg p-4">
         <div className="hero-content  w-full flex-col lg:flex-row-reverse">
           <div className="text-center pl-6 lg:w-2/3 w-full lg:text-left">
             <h1 className="text-3xl uppercase font-bold">{title}</h1>
@@ -122,7 +134,7 @@ const DisplayMeal = () => {
             </p>
             <p className="my-2">
               <span className="font-bold text-lg mr-2">Post Time: </span>
-              {new Date(postTime).toLocaleDateString()}
+              {new Date(mealData?.createTime).toLocaleDateString()}
             </p>
             <div className="my-8">
               <span className="text-xl mr-2 pb-2">{likedUsers?.length}</span>
@@ -158,7 +170,7 @@ const DisplayMeal = () => {
             </div>
           </div>
           <div className="card bg-base-100 w-full lg:w-1/3 max-w-sm shrink-0 shadow-2xl">
-            <img className="rounded-lg" src={photo} alt="" />
+            <img className="rounded-lg" src={mealData?.uploadedImage} alt="" />
           </div>
         </div>
       </div>

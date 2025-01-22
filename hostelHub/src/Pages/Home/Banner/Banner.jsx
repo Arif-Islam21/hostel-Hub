@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import meal1 from "/meal1.jpeg";
-import meal2 from "/meal2.jpeg";
-import meal3 from "/meal3.jpeg";
-import meal4 from "/meal4.jpeg";
-import meal5 from "/meal5.jpeg";
+import meal1 from "/bannerImage/chicken-skewers-with-slices-apples-chili.jpg";
+import meal2 from "/bannerImage/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg";
+import meal3 from "/bannerImage/front-close-view-delicious-dinner-with-chickens-potatoes-greens-saucepan-gray-plate-dark-color-background-with-free-space.jpg";
+import meal4 from "/bannerImage/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner.jpg";
+import meal5 from "/bannerImage/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg";
+import meal6 from "/bannerImage/top-view-tasty-cooked-fish-with-fresh-vegetables-seasonings-dark-table.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -56,7 +57,7 @@ const Banner = () => {
           <img className="h-[75vh] w-full" src={meal5} alt="" />
         </SwiperSlide>
         <SwiperSlide className="min-h-[70vh]">
-          <img className="h-[75vh] w-full" src={meal3} alt="" />
+          <img className="h-[75vh] w-full" src={meal6} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
