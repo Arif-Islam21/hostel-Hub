@@ -5,6 +5,8 @@ import Membership from "./Membership/Membership";
 import Menu from "./Menu/Menu";
 import OurChefs from "./OurChefs/OurChefs";
 import MealTab from "./Tab/MealTab";
+import Users from "./SpecialFood/SpecialFood";
+import AnotherSpecial from "./SpecialFood/AnotherSpecial";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <OurChefs />
       {/* <Membership /> */}
       <Priceing />
+      <Users />
+      <AnotherSpecial />
       <Accordian />
     </div>
   );
