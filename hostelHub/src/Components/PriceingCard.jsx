@@ -21,7 +21,7 @@ const PriceingCard = ({ item }) => {
           <div key={index} className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 text-blue-500"
+              className="w-5 h-5 text-themeColor"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -47,7 +47,7 @@ const PriceingCard = ({ item }) => {
 
       <div className="absolute  bottom-4 w-[95%] left-2  right-2">
         <Link to={`/checkout/${name}/${price}`}>
-          <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+          <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gradient-to-r from-themeColor to-themeSecendary rounded-md hover:bg-themeColor/50 focus:outline-none focus:bg-themeColor/50">
             {isActive ? "Best Value" : "Get Started"}
           </button>
         </Link>

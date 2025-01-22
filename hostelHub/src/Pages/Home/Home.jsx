@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <Menu />
       <OurChefs />
-      <Membership />
+      {/* <Membership /> */}
       <Priceing />
     </div>
   );

@@ -52,7 +52,7 @@ const Priceing = () => {
 
           <div className="overflow-hidden p-0.5 mt-6 border rounded-lg dark:border-gray-700">
             <div className="sm:-mx-0.5 flex">
-              <button className=" focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white bg-blue-500 rounded-lg">
+              <button className=" focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-white bg-themeColor rounded-lg">
                 Monthly
               </button>
               <button className=" focus:outline-none px-3 w-1/2 sm:w-auto py-1 sm:mx-0.5 text-gray-800 dark:text-gray-200 dark:hover:bg-gray-800 bg-transparent rounded-lg hover:bg-gray-200">

@@ -19,7 +19,7 @@ const MealTab = () => {
           {tabData.map((item, index) => (
             <Tab
               key={index}
-              className={`w-full cursor-pointer shadow-2xl text-center ${
+              className={`w-full cursor-pointer shadow-xl shadow-themeColor text-center ${
                 tabIndex === index
                   ? " bg-gradient-to-r from-themeColor to-themeSecendary font-bold text-white"
                   : "bg-white text-black"
