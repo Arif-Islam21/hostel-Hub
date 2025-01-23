@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import meal1 from "/bannerImage/chicken-skewers-with-slices-apples-chili.jpg";
-import meal2 from "/bannerImage/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg";
-import meal3 from "/bannerImage/front-close-view-delicious-dinner-with-chickens-potatoes-greens-saucepan-gray-plate-dark-color-background-with-free-space.jpg";
-import meal4 from "/bannerImage/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner.jpg";
-import meal5 from "/bannerImage/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg";
-import meal6 from "/bannerImage/top-view-tasty-cooked-fish-with-fresh-vegetables-seasonings-dark-table.jpg";
+import meal1 from "../../../../public/bannerImage/chicken-skewers-with-slices-apples-chili.avif";
+import meal2 from "../../../../public/bannerImage/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg";
+import meal3 from "../../../../public/bannerImage/front-close-view-delicious-dinner-with-chickens-potatoes-greens-saucepan-gray-plate-dark-color-background-with-free-space.avif";
+import meal4 from "../../../../public/bannerImage/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner.avif";
+import meal5 from "../../../../public/bannerImage/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.avif";
+import meal6 from "../../../../public/bannerImage/top-view-tasty-cooked-fish-with-fresh-vegetables-seasonings-dark-table.avif";
 
 // Import Swiper styles
 import "swiper/css";
