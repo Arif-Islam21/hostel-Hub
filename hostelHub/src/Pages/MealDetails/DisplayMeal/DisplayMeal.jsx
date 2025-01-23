@@ -11,7 +11,7 @@ import Review from "../../../Components/Review";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import useUserBadge from "../../../Hooks/useUserBadge";
-import image from "/bannerImage/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg";
+import image from "/bannerImage/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner.avif";
 
 const DisplayMeal = () => {
   const { user, loading } = useAuth();
@@ -30,6 +30,8 @@ const DisplayMeal = () => {
       return data;
     },
   });
+
+  console.log(mealData);
 
   console.log(mealData);
   const open = () => {
@@ -134,7 +136,9 @@ const DisplayMeal = () => {
             </p>
             <p className="my-2">
               <span className="font-bold text-lg mr-2">Post Time: </span>
-              {new Date(mealData?.createTime).toLocaleDateString()}
+              {new Date(
+                mealData?.createTime || mealData?.postTime
+              ).toLocaleDateString()}
             </p>
             <div className="my-8">
               <span className="text-xl mr-2 pb-2">{likedUsers?.length}</span>
@@ -170,7 +174,11 @@ const DisplayMeal = () => {
             </div>
           </div>
           <div className="card bg-base-100 w-full lg:w-1/3 max-w-sm shrink-0 shadow-2xl">
-            <img className="rounded-lg" src={mealData?.uploadedImage} alt="" />
+            <img
+              className="rounded-lg"
+              src={mealData?.uploadedImage || mealData?.photo}
+              alt=""
+            />
           </div>
         </div>
       </div>

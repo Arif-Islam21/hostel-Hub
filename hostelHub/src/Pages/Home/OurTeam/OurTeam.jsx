@@ -50,7 +50,7 @@ const OurTeam = () => {
 
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-gray-100 dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-themeColor capitalize lg:text-3xl dark:text-white">
             Our Executive Chefes
@@ -68,7 +68,7 @@ const OurTeam = () => {
             {chefsData?.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-themeColor/80 dark:border-gray-700 dark:hover:border-transparent"
+                className="flex flex-col items-center p-8 shadow-lg bg-white transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-themeColor/80 dark:border-gray-700 dark:hover:border-transparent"
               >
                 <img
                   className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"

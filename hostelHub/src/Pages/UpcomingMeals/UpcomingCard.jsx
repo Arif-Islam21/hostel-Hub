@@ -27,7 +27,7 @@ const UpcomingCard = ({ item, refetch }) => {
 
   return (
     <div className="mb-8">
-      <div className="card card-compact bg-base-100 w-96 shadow-xl">
+      <div className="card card-compact bg-gray-200 w-96 shadow-xl">
         <figure>
           <img
             src={uploadedImage}

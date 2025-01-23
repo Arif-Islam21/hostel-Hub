@@ -1,5 +1,5 @@
 import ThemeBtn from "../../../Components/ThemeBtn";
-import image from "/bannerImage/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg";
+import image from "/bannerImage/top-view-fried-meat-slices-with-soup-vegetables-seasonings-dark-blue-desk-vegetable-meal-food-meat-dinner.avif";
 
 const AnotherSpecial = () => {
   return (

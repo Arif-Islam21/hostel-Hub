@@ -1,5 +1,5 @@
 import ThemeBtn from "../../../Components/ThemeBtn";
-import image from "/bannerImage/front-close-view-delicious-dinner-with-chickens-potatoes-greens-saucepan-gray-plate-dark-color-background-with-free-space.jpg";
+import image from "/bannerImage/top-view-tasty-cooked-fish-with-fresh-vegetables-seasonings-dark-table.avif";
 
 const Users = () => {
   return (
